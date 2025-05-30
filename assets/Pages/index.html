@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP GAMER - Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body id="home">
+    <header>
+        <h1 class="title" id="xp">XP GAMER</h1>
+
+        <nav class="paginas" id="menu">
+            <a href="./index.html">Home</a>
+            <a href="./review.html" rel="external">Reviews</a>
+            <!-- <a href="./noticias.html" rel="external">Notícias</a> -->
+            <a href="./projeto.html" rel="external">Projeto</a>
+            <a href="./cadastro.html" rel="external" target="_blank">Login/Cadastro</a>
+            <a id="fale" href="./contatos.html" rel="external" target="_blank">Fale conosco</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <!-- <button id="theme-toggle">🌙</button> -->
+    </header>
+
+    <main>
+        <section id="lancamentos">
+            <h2>Notícias do momento</h2>
+            <div class="slider">
+                <div class="card active">
+                    <img src="../images/doom.jpg" id="main-news" alt="Doom">
+                    <h3>Doom: The Dark Ages chega em maio!</h3>
+                    <p>Novo jogo da franquia chega no dia 13 de maio, com novas mecânicas e jogabilidade.</p>
+                </div>
+
+                <div class="card">
+                    <img src="../images/l-kv-pic.jpeg" id="main-news" alt="Switch2">
+                    <h3>Nintendo anúncia seu novo console, o Nintendo Switch 2!</h3>
+                    <p>O novo console da Nintendo promete superar seu antecessor de todas as formas!</p>
+                </div>
+
+                <div class="card">
+                    <img src="../images/gta-6.jpeg" id="main-news" alt="GTA VI">
+                    <h3>GTA VI é adiado para 2026, mas tráz trailer fantástico</h3>
+                    <p>O jogo mais aguardado de todos os tempos foi adiado para o dia 26 de maio de 2026</p>
+                </div>
+
+                <div class="slider-background"></div>
+
+                <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+                <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <div class="jogos-container">
+                <div class="jogo">
+                    <img class="jogo" src="../images/AC-Shadows-1-1044x594.png" alt="Assasin's Creed Shadows"
+                        title="Assassin's Creed Shadows">
+                    <h3>Assassin's Creed Shadows sai essa semana!</h3>
+                    <p>Lançamento é decisivo para o futuro da Ubisoft.</p>
+                </div>
+                <div class="jogo">
+                    <img class="jogo" src="../images/pokemon-s-pikachu-atop-a-background-of-lego-bricks.avif"
+                        alt="Lego Pokemon" title="Lego Pokemon">
+                    <h3>Lego terá parceria com Pokémon!</h3>
+                    <p>Evento inédito surpreende os fãs.</p>
+                </div>
+                <div class="jogo">
+                    <img class=" jogo" src="../images/split.png" alt="Split Fiction" title="Split Fiction">
+                    <h3> Split Fiction trás uma aventura inovadora,</h3>
+                    <p>Dos criadores do vencedor de jogo do ano, It takes two.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="linha-verde-contorno">
+            <div class="jogos-noticias">
+                <h6 id="reviews" class="jogos-noticias"> NOTÍCIAS BRASIL</h6>
+                <div class="noticias">
+                    <img class="noticias" id="noticia-topo" src="../images/psplus.jpg" alt="PS Plus" title="PS Plus">
+                    <h3>PS Plus tem aumento significativo de preço!<br>Novamente a assinatura da Sony recebe um aumento,
+                        o reajuste começa a partir de maio.</h3>
+                </div>
+                <div class="noticias">
+                    <img class="noticias" src="../images/switch 2.png" alt="SwitchBR2" title="SwitchBR2">
+                    <h3>O preço do Nintendo Switch 2 no Brasil será de R$ 4.499,90. <br> O lançamento do console no
+                        Brasil está previsto para
+                        5 de junho.</h3>
+                </div>
+                <div class="noticias">
+                    <img class=" noticias" src="../images/death.jpeg" alt="Split Fiction" title="Split Fiction">
+                    <h3>Preço de Death Stranding 2 volta ao normal no Brasil após aumento repentino.</h3>
+                </div>
+            </div>
+
+            <div class="reviews-menor">
+                <h6>REVIEWS</h6>
+                <div class="review">
+                    <div class="image-wrapper">
+                        <img src="../images/monstershunter.avif" alt="Monster Hunter" title="Monster Hunter">
+                        <span class="nota">XP 8,5</span>
+                    </div>
+                    <h3>Review: Monster Hunter Wilds eleva a ação e o combate, tudo que os fãs gostam! É pau nos
+                        monstros!</h3>
+                </div>
+                <div class="review">
+                    <div class="image-wrapper">
+                        <img src="../images/expedition.jpg" alt="Expedition" title="Expedition">
+                        <span class="nota">XP 9,5</span>
+                    </div>
+                    <h3>Review: Clair Obscure Expedition 3 se tornou a maior e melhor surpresa do ano, um RPG de turno
+                        impecável que abalou o mundo dos games!</h3>
+                </div>
+                <div class="review">
+                    <div class="image-wrapper">
+                        <img src="../images/kingdom.png" alt="kingdom" title="kingdom">
+                        <span class="nota">XP 8</span>
+                    </div>
+                    <h3>Review: Kingdom Come: Deliverance II estoura a bolha e surpreende com os níveis de detalhe e
+                        jogabilidade.</h3>
+                </div>
+                <div class="review">
+                    <div class="image-wrapper">
+                        <img src="../images/doom.jpg" alt="Expedition" title="Expedition">
+                        <span class="nota">XP 8</span>
+                    </div>
+                    <h3>Review: Doom The Dark Ages simplifica a fórmula e diverte horrores.</h3>
+                </div>
+                <div class="review">
+                    <div class="image-wrapper">
+                        <img src="../images/repo.jpg" alt="REPO" title="REPO">
+                        <span class="nota">XP 7,5</span>
+                    </div>
+                    <h3>Review: R.E.P.O trás uma experiência divertida e engraçada, perfeito para jogar com os amigos.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <h2 id="curiosidades">Curiosidades do mês</h2>
+
+        <h3>
+            Tá pensando que não tem personagem brasileiro nos jogos? Confira algum dos personagens BR do mundo dos
+            games:
+        </h3>
+        <div class="fotos-grupo">
+            <div class="foto">
+                <img src="../images/lucio-02.jpg" alt="Caio Pereira Nepomuceno">
+                <h3>Lucio - Overwatch </h3>
+            </div>
+            <div class="foto">
+                <img src="../images/laura.png" alt="Fernando Miranda de Oliveira" title="Fernando Miranda de Oliveira">
+                <h3>Laura - Street Fighter</h3>
+            </div>
+            <div class="foto"">
+            <img  src=" ../images/samuelrodrigues.png" alt="Samuel Rodrigues - Metal Gear<"
+                title="Samuel Rodrigues - Metal Gear<">
+                <h3>Samuel Rodrigues - Metal Gear</h3>
+            </div>
+            <div class="foto"">
+                <img  src=" ../images/raze.png" alt="Raze - Valorant" title="Raze - Valorant">
+                <h3>Raze - Valorant</h3>
+            </div>
+        </div>
+        <h3>Alguns desses personagens são muito famosos e queridos pelos fãs, além de representar o povo brasileiro,
+            representam a mistura cultural do nosso pais!</h3>
+        <div class="fotos-grupo">
+            <div class="foto">
+                <img src="../images/caveira.png" alt="Caveira - Rainbow Six Siege">
+                <h3>Caveira - Rainbow Six Siege</h3>
+            </div>
+            <div class="foto">
+                <img src="../images/eddygordo.jpeg" alt="Eddy Gordo - Tekken" title="Eddy Gordo - Tekken">
+                <h3>Eddy Gordo - Tekken</h3>
+            </div>
+            <div class="foto"">
+            <img  src=" ../images/blanka.jpg" alt="Blanka - Street Fighter<" title="Blanka - Street Fighter<">
+                <h3>Blanka - Street Fighter</h3>
+            </div>
+            <div class="foto"">
+                <img  src=" ../images/ozob.jpg" alt="OZOB - Cyberpunk 2077" title="OZOB - Cyberpunk 2077">
+                <h3>Ozob - Cyberpunk 2077</h3>
+            </div>
+        </div>
+        </div>
+
+        <h3>
+            Você sabia que todo ano ocorre uma votação envolvendo jogadres, empresas e jornalistas para escolher os
+            melhores jogos do ano?
+        </h3>
+        <p>
+            Confira abaixo quais foram os jogos ganhadores de jogo do ano desde 2014 de acordo com o The Game
+            Awards, maior evento da categoria!
+        </p>
+
+        <table class="table-striped">
+            <thead>
+                <tr>
+                    <th>Ano</th>
+                    <th>Jogo</th>
+                    <th>Genêro</th>
+                    <th>Empresa</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>2014</td>
+                    <td>Dragon Age: Inquisition</td>
+                    <td>RPG</td>
+                    <td>BioWare</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>The Withcer 3: Wild Hunt</td>
+                    <td>RPG</td>
+                    <td>CD Projekt Red</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Overwatch</td>
+                    <td>FPS</td>
+                    <td>Blizzard</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>The Legend of Zelda: Breath of the Wild</td>
+                    <td>Ação e aventura</td>
+                    <td>Nintendo</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>God of War</td>
+                    <td>Ação e aventura</td>
+                    <td>Santa Monica Studio</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Sekiro: Shadow Dies Twice</td>
+                    <td>Ação e aventura</td>
+                    <td>FromSoftware</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>The Last of Us: Part II</td>
+                    <td>Ação e aventura</td>
+                    <td>Naughty Dog</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>It Takes Two</td>
+                    <td>Ação e aventura</td>
+                    <td>Hazelight Studio</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Elden Ring</td>
+                    <td>RPG</td>
+                    <td>FromSoftware</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Baldur's Gate</td>
+                    <td>RPG</td>
+                    <td>Larian Studios</td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Astrobot</td>
+                    <td>Plataforma</td>
+                    <td>Team Asobi</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">Fonte: <a id="wiki" class="externos"
+                            href="https://en.wikipedia.org/wiki/List_of_Game_of_the_Year_awards"
+                            target="_blank">Wikipedia.com.br</a></td>
+                </tr>
+            </tfoot>
+        </table>
+        <tfoot>
+
+            <h3>Quer saber mais informações sobre esses jogos?</h3>
+            <a id="confira" href="./conteudo.html">Confira aqui</a>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Conteúdo</h3>
+                <ul>
+                    <li><a href="./noticias.html">Notícias</a></li>
+                    <!-- <li><a href="./review.html">Reviews</a></li> -->
+                    <li><a href="conteudo.html" target="_blank">Curiosidades</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="./projeto.html">Quem somos</a></li>
+                    <li><a href="./contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/xpgamer_25/" rel="external" target="_blank">Instagram</a>
+                    </li>
+                    <li><a href="https://www.tiktok.com/@xpgamer492?lang=pt-BR" rel="external"
+                            target="_blank">Tiktok</a> </li>
+                    <li><a href="https://www.youtube.com/channel/UCmQ3FT_w4OtZe3SmHVmRGDw" rel="external"
+                            target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p id="footer">Este site valoriza práticas de inclusão, diversidade e sustentabilidade na web.
+            <br>&copy; 2025 XP GAMER - Todas as informações sobre o mundo dos games.
+        </p>
+    </footer>
+
+    <script src="../js/functions.js"></script>
+
+</body>
+
+</html>
