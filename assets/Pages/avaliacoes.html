@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP GAMER - Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body id="home">
+    <header>
+        <h1 class="title" id="xp">XP GAMER</h1>
+
+        <nav class="paginas" id="menu">
+            <a href="/index.html">Home</a>
+            <a href="./review.html" rel="external">Reviews</a>
+            <a href="./projeto.html" rel="external">Projeto</a>
+            <a href="./avaliacoes.html" rel="external">Avaliações</a>
+            <a id="fale" href="./contatos.html" rel="external" target="_blank">Fale conosco</a>
+        </nav>
+        <a class="absolute top-4 right-4 p-4  text-white rounded-bl-lg" href="./cadastro.html" rel="external"
+            target="_blank">Login/Cadastro</a>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <div id="modal-avaliacao" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50">
+        <div class="bg-gray-900 text-white p-6 rounded-lg shadow-lg w-full max-w-xl relative">
+            <button id="btn-fechar-modal" class="absolute top-2 right-4 text-white text-xl">×</button>
+
+            <div class="flex flex-col md:flex-row gap-4">
+                <img id="img-jogo" src="" alt="Capa do jogo" class="w-full md:w-1/3 rounded">
+
+                <div class="flex-1">
+                    <h3 id="titulo-jogo" class="text-2xl font-bold mb-2">Nome do Jogo</h3>
+                    <p id="ano-jogo" class="text-sm text-gray-400 mb-4">Ano</p>
+
+                    <div class="mb-4">
+                        <label class="block mb-2">Sua nota:</label>
+                        <input type="number" min="1" max="5" id="nota-input" class="flex gap-1 cursor-pointer">
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="comentario" class="block mb-2">Seu comentário:</label>
+                        <textarea id="comentario" rows="4" class="w-full p-2 text-black rounded resize-none"
+                            placeholder="Escreva o que achou do jogo..."></textarea>
+                    </div>
+
+                    <div class="flex justify-end gap-2">
+                        <button id="btn-cancelar" class="text-gray-400 hover:underline">Cancelar</button>
+                        <button id="btn-enviar"
+                            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Salvar
+                            avaliação</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <section class="p-5 text-white bg-gray-800">
+            <h2 class="text-2xl font-bold mb-4">Avalie jogos populares</h2>
+            <div id="jogos-dinamicos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Conteúdo</h3>
+                <ul>
+                    <li><a href="assets/Pages/noticias">Notícias</a></li>
+                    <li><a href="assets/Pages/review.html" target="_blank">Reviews</a></li>
+                    <li><a href="assets/Pages/conteudo.html" target="_blank">Curiosidades</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="assets/Pages/projeto.html">Quem somos</a></li>
+                    <li><a href="assets/Pages/contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/xpgamer_25/" rel="external" target="_blank">Instagram</a>
+                    </li>
+                    <li><a href="https://www.tiktok.com/@xpgamer492?lang=pt-BR" rel="external"
+                            target="_blank">Tiktok</a> </li>
+                    <li><a href="https://www.youtube.com/channel/UCmQ3FT_w4OtZe3SmHVmRGDw" rel="external"
+                            target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p id="footer">Este site valoriza práticas de inclusão, diversidade e sustentabilidade na web.
+            <br>&copy; 2025 XP GAMER - Todas as informações sobre o mundo dos games.
+        </p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="../js/avalie.js"></script>
+
+</body>
+
+</html>

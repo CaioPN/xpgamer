@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* Reset Global */
 * {
     margin: 0;
@@ -19,8 +17,6 @@
     --cinza-escuro: #1c1c1c;
     --cinza-menos-escuro: #121212;
 }
-
-
 
 body {
     font-family: "Poppins", sans-serif !important;
@@ -201,10 +197,14 @@ h2#curiosidades {
     right: 15%;
 }
 
-#main-news {
-    width: 60%;
+.main-news {
+    max-width: 68%;
+    height: auto;
     margin-top: 20px;
     border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px,
             100% calc(100% - 20px), calc(100% - 20px) 100%,
             20px 100%, 0 calc(100% - 20px), 0 20px);
@@ -377,24 +377,29 @@ h6 {
     padding: 0 80px;
 }
 
-.banner{
+.banner {
     display: flex;
-    align-items: center; /* centraliza verticalmente */
+    align-items: center;
+    /* centraliza verticalmente */
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;  /* Aumenta largura */
+    max-width: 500px;
+    /* Aumenta largura */
     height: 100%;
-    max-height: 400px; /* usa altura total da seção de reviews */
+    max-height: 400px;
+    /* usa altura total da seção de reviews */
     flex-shrink: 0;
     padding-top: 600px;
 }
 
 .banner img {
-    width: 100%;;  /* Aumenta largura */
+    width: 100%;
+    ;
+    /* Aumenta largura */
     height: 100%;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -418,19 +423,22 @@ h6 {
         margin: 20px 0;
     }
 
-    .review, .banner {
+    .review,
+    .banner {
         flex-direction: column;
         margin-left: 0;
         width: 100%;
         gap: 15px;
     }
 
-    .image-wrapper, .banner {
+    .image-wrapper,
+    .banner {
         width: 100%;
         height: auto;
     }
 
-    .image-wrapper img, .banner img {
+    .image-wrapper img,
+    .banner img {
         width: 100%;
         height: auto;
     }
@@ -633,39 +641,39 @@ h1 {
 
 body#contatos {
     background-color: #efeded;
+}
 
-    .contatos {
-        max-width: 600px;
-        margin: 50px auto;
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.327);
-        margin-top: 20px;
-    }
+.contatos {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.327);
+    margin-top: 20px;
+}
 
-    .contact-list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-    .contact-card {
-        background: #e3e3e3;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 2px 2px 5px var(--box-shadow-cartao-de-contatos);
-    }
+.contact-card {
+    background: #e3e3e3;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--box-shadow-cartao-de-contatos);
+}
 
-    .contact-card h2 {
-        margin: 0;
-        color: #222;
-    }
+.contact-card h2 {
+    margin: 0;
+    color: #222;
+}
 
-    .contact-card p {
-        margin: 5px 0;
-        color: var(--preto-fonte-p);
-    }
+.contact-card p {
+    margin: 5px 0;
+    color: var(--preto-fonte-p);
 }
 
 /* Cadastro de usuario */
@@ -692,7 +700,7 @@ legend {
 }
 
 input {
-    margin: 20px;
+    margin: 0px;
     color: black;
     font-size: 24px;
     font-weight: bold;

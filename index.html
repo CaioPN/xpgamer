@@ -12,12 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
 <body id="home">
@@ -27,33 +24,33 @@
         <nav class="paginas" id="menu">
             <a href="index.html">Home</a>
             <a href="assets/Pages/review.html" rel="external">Reviews</a>
-            <!-- <a href="./noticias.html" rel="external">Notícias</a> -->
             <a href="assets/Pages/projeto.html" rel="external">Projeto</a>
-            <a href="assets/Pages/cadastro.html" rel="external" target="_blank">Login/Cadastro</a>
+            <a href="assets/Pages/avaliacoes.html" rel="external">Avaliações</a>
             <a id="fale" href="assets/Pages/contatos.html" rel="external" target="_blank">Fale conosco</a>
         </nav>
+        <a class="absolute top-4 right-4 p-4  text-white rounded-bl-lg" href="assets/Pages/cadastro.html" rel="external"
+            target="_blank">Login/Cadastro</a>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <!-- <button id="theme-toggle">🌙</button> -->
     </header>
 
     <main>
         <section id="lancamentos">
             <h2>Notícias do momento</h2>
             <div class="slider">
-                <div class="card active">
-                    <img src="assets/images/doom.jpg" id="main-news" alt="Doom">
+                <div class="card ">
+                    <img src="assets/images/doom.jpg" class="main-news" alt="Doom">
                     <h3>Doom: The Dark Ages chega em maio!</h3>
                     <p>Novo jogo da franquia chega no dia 13 de maio, com novas mecânicas e jogabilidade.</p>
                 </div>
 
                 <div class="card">
-                    <img src="assets/images/l-kv-pic.jpeg" id="main-news" alt="Switch2">
+                    <img src="assets/images/l-kv-pic.jpeg" class="main-news" alt="Switch2">
                     <h3>Nintendo anúncia seu novo console, o Nintendo Switch 2!</h3>
                     <p>O novo console da Nintendo promete superar seu antecessor de todas as formas!</p>
                 </div>
 
                 <div class="card">
-                    <img src="assets/images/gta-6.jpeg" id="main-news" alt="GTA VI">
+                    <img src="assets/images/gta-6.jpeg" class="main-news" alt="GTA VI">
                     <h3>GTA VI é adiado para 2026, mas tráz trailer fantástico</h3>
                     <p>O jogo mais aguardado de todos os tempos foi adiado para o dia 26 de maio de 2026</p>
                 </div>
@@ -89,7 +86,8 @@
             <div class="jogos-noticias">
                 <h6 id="reviews" class="jogos-noticias"> NOTÍCIAS BRASIL</h6>
                 <div class="noticias">
-                    <img class="noticias" id="noticia-topo" src="assets/images/psplus.jpg" alt="PS Plus" title="PS Plus">
+                    <img class="noticias" id="noticia-topo" src="assets/images/psplus.jpg" alt="PS Plus"
+                        title="PS Plus">
                     <h3>PS Plus tem aumento significativo de preço!<br>Novamente a assinatura da Sony recebe um aumento,
                         o reajuste começa a partir de maio.</h3>
                 </div>
@@ -110,7 +108,7 @@
                 <div class="review">
                     <div class="image-wrapper">
                         <img src="assets/images/monstershunter.avif" alt="Monster Hunter" title="Monster Hunter">
-                        <span class="nota">XP 8,5</span>
+                        <span class="nota">XP 3,5</span>
                     </div>
                     <h3>Review: Monster Hunter Wilds eleva a ação e o combate, tudo que os fãs gostam! É pau nos
                         monstros!</h3>
@@ -118,7 +116,7 @@
                 <div class="review">
                     <div class="image-wrapper">
                         <img src="assets/images/expedition.jpg" alt="Expedition" title="Expedition">
-                        <span class="nota">XP 9,5</span>
+                        <span class="nota">XP 4,9</span>
                     </div>
                     <h3>Review: Clair Obscure Expedition 3 se tornou a maior e melhor surpresa do ano, um RPG de turno
                         impecável que abalou o mundo dos games!</h3>
@@ -126,7 +124,7 @@
                 <div class="review">
                     <div class="image-wrapper">
                         <img src="assets/images/kingdom.png" alt="kingdom" title="kingdom">
-                        <span class="nota">XP 8</span>
+                        <span class="nota">XP 4</span>
                     </div>
                     <h3>Review: Kingdom Come: Deliverance II estoura a bolha e surpreende com os níveis de detalhe e
                         jogabilidade.</h3>
@@ -134,14 +132,14 @@
                 <div class="review">
                     <div class="image-wrapper">
                         <img src="assets/images/doom.jpg" alt="Expedition" title="Expedition">
-                        <span class="nota">XP 8</span>
+                        <span class="nota">XP 4</span>
                     </div>
                     <h3>Review: Doom The Dark Ages simplifica a fórmula e diverte horrores.</h3>
                 </div>
                 <div class="review">
                     <div class="image-wrapper">
                         <img src="assets/images/repo.jpg" alt="REPO" title="REPO">
-                        <span class="nota">XP 7,5</span>
+                        <span class="nota">XP 3</span>
                     </div>
                     <h3>Review: R.E.P.O trás uma experiência divertida e engraçada, perfeito para jogar com os amigos.
                     </h3>
@@ -160,16 +158,17 @@
                 <h3>Lucio - Overwatch </h3>
             </div>
             <div class="foto">
-                <img src="assets/images/laura.png" alt="Fernando Miranda de Oliveira" title="Fernando Miranda de Oliveira">
+                <img src="assets/images/laura.png" alt="Fernando Miranda de Oliveira"
+                    title="Fernando Miranda de Oliveira">
                 <h3>Laura - Street Fighter</h3>
             </div>
             <div class="foto"">
-            <img  src="assets/images/samuelrodrigues.png" alt="Samuel Rodrigues - Metal Gear<"
+            <img  src=" assets/images/samuelrodrigues.png" alt="Samuel Rodrigues - Metal Gear<"
                 title="Samuel Rodrigues - Metal Gear<">
                 <h3>Samuel Rodrigues - Metal Gear</h3>
             </div>
             <div class="foto"">
-                <img  src="assets/images/raze.png" alt="Raze - Valorant" title="Raze - Valorant">
+                <img  src=" assets/images/raze.png" alt="Raze - Valorant" title="Raze - Valorant">
                 <h3>Raze - Valorant</h3>
             </div>
         </div>
@@ -185,11 +184,11 @@
                 <h3>Eddy Gordo - Tekken</h3>
             </div>
             <div class="foto"">
-            <img  src="assets/images/blanka.jpg" alt="Blanka - Street Fighter<" title="Blanka - Street Fighter<">
+            <img  src=" assets/images/blanka.jpg" alt="Blanka - Street Fighter<" title="Blanka - Street Fighter<">
                 <h3>Blanka - Street Fighter</h3>
             </div>
             <div class="foto"">
-                <img  src="assets/images/ozob.jpg" alt="OZOB - Cyberpunk 2077" title="OZOB - Cyberpunk 2077">
+                <img  src=" assets/images/ozob.jpg" alt="OZOB - Cyberpunk 2077" title="OZOB - Cyberpunk 2077">
                 <h3>Ozob - Cyberpunk 2077</h3>
             </div>
         </div>
